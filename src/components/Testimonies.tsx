@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, Variants } from "framer-motion";
 
 const TESTIMONIOS = [
   {
@@ -38,7 +38,7 @@ export default function Testimonials() {
   const reduced = useReducedMotion();
 
   // Variants suaves y reutilizables
-  const fadeUp = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 16 },
     show: {
       opacity: 1,
@@ -47,7 +47,7 @@ export default function Testimonials() {
     },
   };
 
-  const container = {
+  const container: Variants = {
     hidden: {},
     show: {
       transition: {

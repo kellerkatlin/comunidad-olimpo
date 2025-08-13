@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, Variants } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Play, ArrowUpRight } from "lucide-react";
@@ -18,7 +18,7 @@ export default function SecondCta() {
   }, []);
 
   // Variants suaves
-  const fadeUp = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 18 },
     show: {
       opacity: 1,

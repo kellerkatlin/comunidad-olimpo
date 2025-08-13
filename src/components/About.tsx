@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import coachSpeaking from "../../public/coach-speaking.jpg";
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 
@@ -12,11 +12,11 @@ const About = () => {
   const isInView = useInView(sectionRef, { amount: 0.3 });
 
   // Variants para evitar repetir props en cada motion.*
-  const fadeLeft = {
+  const fadeLeft: Variants = {
     hidden: { x: -60, opacity: 0 },
     show: { x: 0, opacity: 1, transition: { duration: 0.9, ease: "easeOut" } },
   };
-  const fadeRight = {
+  const fadeRight: Variants = {
     hidden: { x: 60, opacity: 0 },
     show: { x: 0, opacity: 1, transition: { duration: 0.9, ease: "easeOut" } },
   };

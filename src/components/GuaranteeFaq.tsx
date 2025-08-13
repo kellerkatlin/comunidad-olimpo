@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -37,7 +37,7 @@ export default function GuaranteeFaq() {
   const reduced = useReducedMotion();
 
   // Variants suaves y reutilizables
-  const fadeUp = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 16 },
     show: {
       opacity: 1,
