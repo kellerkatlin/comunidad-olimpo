@@ -1,28 +1,34 @@
 "use client";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../../public/logo.png";
-import { Button } from "./ui/button";
+import logo from "../../public/lgo.png";
 import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Events", href: "#events" },
-    { name: "Contact", href: "#contact" },
+    { name: "Inicio", href: "#home" },
+    { name: "Nosotros", href: "#about" },
+    { name: "Contacto", href: "#contact" },
+    { name: "Servicios", href: "#services" },
+    { name: "Testimonios", href: "#events" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Image src={logo} alt="Your Infinite Life" className="h-8 w-auto" />
+          <div className="flex items-center ">
+            <Image
+              src={logo}
+              alt="Your Infinite Life"
+              className="h-16 w-auto"
+            />
+            <p className="hidden md:block text-md text-white lobster">
+              Comunidad Olimpo
+            </p>
           </div>
 
           {/* Desktop Navigation */}
@@ -31,17 +37,11 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-dark-text hover:text-cyan-primary transition-colors duration-300 font-medium"
+                className="text-lg text-white hover:text-white/50 transition-colors duration-300 font-bold"
               >
                 {item.name}
               </a>
             ))}
-            <Button
-              variant="outline"
-              className="border-cyan-primary text-cyan-primary hover:bg-cyan-primary hover:text-white"
-            >
-              Book Session
-            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -61,18 +61,12 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-dark-text hover:text-cyan-primary transition-colors duration-300 font-medium"
+                  className="text-blue-900 hover:text-blue-700 transition-colors duration-300 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button
-                variant="outline"
-                className="border-cyan-primary text-cyan-primary hover:bg-cyan-primary hover:text-white w-full"
-              >
-                Book Session
-              </Button>
             </div>
           </nav>
         )}

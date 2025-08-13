@@ -1,11 +1,64 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@theme {
+  --font-family-courgette: var(--font-courgette), cursive;
+  --background-image-hero: url("/background.jpeg");
+}
+
+@layer utilities {
+  .bg-color {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(11, 11, 11),
+      rgba(58, 58, 58),
+      rgba(107, 107, 107)
+    );
+  }
+  .bg-gradient-hero {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(11, 11, 11, 0.5),
+        rgba(58, 58, 58, 0.5),
+        rgba(107, 107, 107, 0.5)
+      ),
+      url("/imagen_grises_1.jpg");
+    background-size: cover, cover, cover;
+    background-position: top, top, top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+  .bg-gradient-total {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      ),
+      url("/back_1_grises.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.playfair {
+  font-family: var(--font-playfair);
 }
 
 .logo {

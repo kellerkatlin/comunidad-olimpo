@@ -11,10 +11,14 @@ export default function Home() {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <About />
-      <Services />
-      <Events />
-      <BookSession />
+      <div
+      // className="bg-gradient-total"
+      >
+        <About />
+        <BookSession />
+        <Services />
+        <Events />
+      </div>
       <Footer />
     </div>
   );
