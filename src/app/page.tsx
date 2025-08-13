@@ -1,10 +1,14 @@
 import About from "@/components/About";
+import Benefits from "@/components/Benefits";
 import BookSession from "@/components/BookSession";
 import Events from "@/components/Events";
 import Footer from "@/components/Footer";
+import GuaranteeFaq from "@/components/GuaranteeFaq";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
+import Reviews from "@/components/Reviews";
+import SecondCta from "@/components/SecondCta";
+import Testimonials from "@/components/Testimonies";
 
 export default function Home() {
   return (
@@ -16,8 +20,12 @@ export default function Home() {
       >
         <About />
         <BookSession />
-        <Services />
-        <Events />
+        <Benefits />
+        {/* <Events /> */}
+        <Testimonials />
+        <GuaranteeFaq />
+        <SecondCta />
+        <Reviews />
       </div>
       <Footer />
     </div>

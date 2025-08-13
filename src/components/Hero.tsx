@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
-import DarkVeil from "./animate/DarkVeil";
 import { CornerGlow } from "./animate/CornerGlow";
 
 const Hero = () => {
@@ -23,16 +22,16 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-[100dvh] flex items-center justify-center bg-gradient-hero relative overflow-hidden"
+      className="min-h-[100dvh]  flex items-center justify-center bg-gradient-hero relative overflow-hidden"
     >
       <CornerGlow side="left" />
       <CornerGlow side="right" />
-      <div className="container mx-auto px-4 text-center relative z-40">
-        <div className="flex flex-col lg:flex-row items-center justify-center  w-full h-full">
+      <div className="container  mx-auto px-4 text-center relative z-40">
+        <div className="flex flex-col  lg:flex-row items-center justify-center  w-full h-full">
           {/* Contenido principal */}
-          <div className="max-w-6xl mx-auto relative flex-1 z-10">
+          <div className="max-w-6xl  mx-auto relative flex-1 z-10">
             {/* Main Title */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl playfair relative z-50 ">
+            <h1 className="text-2xl  sm:text-3xl md:text-4xl lg:text-5xl playfair relative z-50 ">
               <TextType
                 text={[
                   "Despierta tu Potencial. Transforma tu Realidad. Únete a la Comunidad Olimpo.",
@@ -40,7 +39,7 @@ const Hero = () => {
                 typingSpeed={75}
                 pauseDuration={1000}
                 showCursor={false}
-                className="font-semibold text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] inline-block w-full"
+                className="font-semibold mt-14 md:mt-0 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] inline-block w-full"
               />
             </h1>
 
