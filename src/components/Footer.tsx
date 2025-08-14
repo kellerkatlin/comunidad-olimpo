@@ -8,7 +8,6 @@ const Footer = () => {
     { name: "Acerca de", href: "#about" },
     { name: "Servicios", href: "#services" },
     { name: "Eventos", href: "#events" },
-    { name: "Contacto", href: "#contact" },
   ];
 
   return (

@@ -36,10 +36,6 @@ const Benefits = () => {
             <br className="hidden md:block" />
             con enfoque y propósito
           </h2>
-          <p className="max-w-2xl mx-auto mt-6 text-medium-gray text-lg leading-relaxed">
-            Presentado en 3 pilares con enfoque práctico para llevarte del punto
-            A al punto B.
-          </p>
         </div>
 
         {/* Grid */}
