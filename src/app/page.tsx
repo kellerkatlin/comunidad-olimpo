@@ -19,11 +19,11 @@ export default function Home() {
       // className="bg-gradient-total"
       >
         <About />
-        <BookSession />
+        {/* <BookSession /> */}
         <Benefits />
         {/* <Events /> */}
-        <Testimonials />
         <GuaranteeFaq />
+        <Testimonials />
         <SecondCta />
         <Reviews />
       </div>

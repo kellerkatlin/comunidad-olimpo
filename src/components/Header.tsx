@@ -24,12 +24,13 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto ">
-        <div
-          className={`flex items-center px-4 py-2  justify-between sticky top-0 z-50 transition-all duration-300 
-  ${scrolled ? "bg-white/80 backdrop-blur-md  " : " text-white bg-trasparent"}`}
-        >
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-white/80 backdrop-blur-md" : "bg-transparent text-white"
+      }`}
+    >
+      <div className="container mx-auto">
+        <div className="flex items-center px-4 py-2 w-full justify-between">
           {/* Logo */}
           <div className="flex items-center ">
             <Image
